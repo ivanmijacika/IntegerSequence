@@ -5,5 +5,6 @@ public class Tester{
       System.out.print(s.next());
       if (s.hasNext()) System.out.print(", ");
     }
+    System.out.println();
   }
 }
