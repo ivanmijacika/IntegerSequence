@@ -6,9 +6,7 @@ public class ArraySequence implements IntegerSequence{
 
   /*Construct the sequence by copying values from the other array into the data array*/
   public ArraySequence(int[] other){
-    for (int i=0; i<other.length; i++){
-      data[i] = other[i];
-    }
+    data = other;
     currentIndex = 0;
   }
 
