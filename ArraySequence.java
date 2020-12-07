@@ -15,8 +15,11 @@ public class ArraySequence implements IntegerSequence{
   }
 
   public int next(){
-    currentIndex++;
-    return data[currentIndex-1];
+    if (hasNext()){
+      currentIndex++;
+      return data[currentIndex-1];
+    }
+    else throw new NoSuchElementException ("End of sequence reached.");
   }
 
   public int length(){
