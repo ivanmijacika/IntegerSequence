@@ -11,19 +11,20 @@ public class ArraySequence implements IntegerSequence{
   }
 
   public boolean hasNext(){
-    return false;
+    return (currentIndex < data.length);
   }
 
   public int next(){
-    return 0;
+    currentIndex++;
+    return data[currentIndex-1];
   }
 
   public int length(){
-    return 0;
+    return data.length;
   }
 
   public void reset(){
-    
+    currentIndex = 0;
   }
 
 }
